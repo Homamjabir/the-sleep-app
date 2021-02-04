@@ -4,6 +4,8 @@ import { Switch } from "react-router";
 import "./App.css";
 import ReactionGameInfo from "./reactionGameInfo.js";
 import ReactionGame from "./reactionGame.js";
+import Menu from "./components/menu.js";
+import Questionnaire from "./components/questionnaire.js";
 
 const App = () => {
   return (
@@ -19,6 +21,12 @@ const App = () => {
             </Route>
             <Route path="/reactiongame">
               <ReactionGame />
+            </Route>
+            <Route path="/menu">
+              <Menu />
+            </Route>
+            <Route path="/questionnaire">
+              <Questionnaire />
             </Route>
           </Switch>
         </Router>
