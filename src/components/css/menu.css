@@ -1,0 +1,27 @@
+
+
+.menuButtons button {
+    top: 50px;
+    margin: auto;
+    margin-bottom:50px;
+
+    padding: 10px;
+    background-color: #1A338C; /* Green background */
+    border: 1px solid white; /* Green border */
+    color: white; /* White text */
+    border-radius: 50px;
+    cursor: pointer; /* Pointer/hand icon */
+    width: 25%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    
+  }
+  
+  .menuButtons button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+    
+  }
+  
+  /* Add a background color on hover */
+  .menuButtons button:hover {
+    background-color: #11215a ;
+  }

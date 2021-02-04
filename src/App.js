@@ -7,6 +7,9 @@ import ReactionGame from "./reactionGame.js";
 import ReactionGameResults from "./reactionGameResults.js";
 import Menu from "./components/menu.js";
 import Questionnaire from "./components/questionnaire.js";
+import Settings from "./components/settings.js";
+import Statistics from "./components/statistics.js";
+import Mini_games from "./components/mini-games.js";
 
 const App = () => {
   return (
@@ -34,6 +37,15 @@ const App = () => {
             </Route>
             <Route path="*">
               <h1>Invalid URL</h1>
+            </Route>
+            <Route path="/settings">
+              <Settings />
+            </Route>
+            <Route path="/statistics">
+              <Statistics />
+            </Route>
+            <Route path="/mini-games">
+              <Mini_games />
             </Route>
           </Switch>
         </Router>
