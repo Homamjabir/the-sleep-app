@@ -23,11 +23,17 @@ const App = () => {
             <Route path="/reactiongame">
               <ReactionGame />
             </Route>
+            <Route path="/reactiongameresults">
+              <ReactionGameResults />
+            </Route>
             <Route path="/menu">
               <Menu />
             </Route>
             <Route path="/questionnaire">
               <Questionnaire />
+            </Route>
+            <Route path="*">
+              <h1>Invalid URL</h1>
             </Route>
           </Switch>
         </Router>
