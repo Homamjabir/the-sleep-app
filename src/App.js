@@ -5,6 +5,8 @@ import "./App.css";
 import ReactionGameInfo from "./reactionGameInfo.js";
 import ReactionGame from "./reactionGame.js";
 import ReactionGameResults from "./reactionGameResults.js";
+import Menu from "./components/menu.js";
+import Questionnaire from "./components/questionnaire.js";
 
 const App = () => {
   return (
@@ -21,12 +23,11 @@ const App = () => {
             <Route path="/reactiongame">
               <ReactionGame />
             </Route>
-            <Route path="/reactiongameresults">
-              <ReactionGameResults />
+            <Route path="/menu">
+              <Menu />
             </Route>
-
-            <Route path="*">
-              <h1>Invalid URL</h1>
+            <Route path="/questionnaire">
+              <Questionnaire />
             </Route>
           </Switch>
         </Router>
