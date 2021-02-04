@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Icon from "./images/return-icon.jpg";
 
 const ReactionGameResults = () => {
   return (

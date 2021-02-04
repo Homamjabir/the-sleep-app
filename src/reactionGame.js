@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Link, Redirect } from "react-router-dom";
-import ReturnIcon from "./images/return-icon.jpg";
+import { Link } from "react-router-dom";
 import HappySun from "./images/happy-sun.png";
 
 function useInterval(callback, delay) {
@@ -25,9 +24,8 @@ function useInterval(callback, delay) {
 
 const ReactionGame = () => {
   const [showImage, setShowImage] = useState(false);
-  const [playedOnce, setPlayedOnce] = useState(false);
+  //const [playedOnce, setPlayedOnce] = useState(false);
 
-  let imgShowing = false;
   let min = 3000; //3 sec
   let max = 10000; //10 sec
   let rand = min + (Math.random() * max - min);
@@ -41,16 +39,16 @@ const ReactionGame = () => {
     //setPlayedOnce(true);
   }
 
-  function redirect() {
+  /*function redirect() {
     if (showImage) {
       //redirect to next page
       console.log("redirectar");
       //this.props.history.push("/test");
-      return <Redirect to="/test" />;
+      //return <Redirect to="/test" />;
     } else {
       //setShowImage(false);
     }
-  }
+  }*/
 
   let buttonxd = <button>Click</button>;
   if (showImage) {
@@ -66,7 +64,13 @@ const ReactionGame = () => {
       <h3>Reaction game</h3>
       <div className="reaction-game-image">
         {showImage ? (
-          <img id="testbild" src={HappySun} width="300" height="300"></img>
+          <img
+            id="testbild"
+            src={HappySun}
+            width="300"
+            height="300"
+            alt="a very happy sun"
+          ></img>
         ) : null}
       </div>
       <p>Wait for the picture</p>
