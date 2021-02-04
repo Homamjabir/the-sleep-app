@@ -12,7 +12,7 @@ const ReactionGameResults = () => {
         <p>03:59:59</p>
       </div>
 
-      <Link to="/homepage">
+      <Link to="/menu">
         <button>Homepage</button>
       </Link>
     </div>
