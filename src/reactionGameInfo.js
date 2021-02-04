@@ -6,7 +6,9 @@ const ReactGameInfo = () => {
   return (
     <div className="reaction-game-info-wrapper">
       <h3>Reaction game</h3>
-      <img src={Icon} alt="test" width="20" height="20"></img>
+      <Link to="/homepage">
+        <img src={Icon} alt="test" width="20" height="20"></img>
+      </Link>
       <div className="reaction-game-info-text">
         <p>After you click start below a reaction test will start</p>
         <br />
@@ -16,7 +18,9 @@ const ReactGameInfo = () => {
         </p>
       </div>
 
-      <button>Start</button>
+      <Link to="/reactiongame">
+        <button>Start</button>
+      </Link>
     </div>
   );
 };

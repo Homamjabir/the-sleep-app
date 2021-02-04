@@ -4,6 +4,7 @@ import { Switch } from "react-router";
 import "./App.css";
 import ReactionGameInfo from "./reactionGameInfo.js";
 import ReactionGame from "./reactionGame.js";
+import ReactionGameResults from "./reactionGameResults.js";
 
 const App = () => {
   return (
@@ -14,11 +15,18 @@ const App = () => {
             <Route exact path="/">
               <h1>Login page</h1>
             </Route>
-            <Route path="/reactgameinfo">
+            <Route path="/reactiongameinfo">
               <ReactionGameInfo />
             </Route>
             <Route path="/reactiongame">
               <ReactionGame />
+            </Route>
+            <Route path="/reactiongameresults">
+              <ReactionGameResults />
+            </Route>
+
+            <Route path="*">
+              <h1>Invalid URL</h1>
             </Route>
           </Switch>
         </Router>

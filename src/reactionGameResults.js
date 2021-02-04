@@ -4,19 +4,17 @@ import Icon from "./images/return-icon.jpg";
 
 const ReactionGameResults = () => {
   return (
-    <div className="reaction-game-info-wrapper">
-      <h3>Reaction game</h3>
-      <img src={Icon} alt="test" width="20" height="20"></img>
+    <div className="reaction-game-result-wrapper">
+      <h3>Your speed was X seconds</h3>
       <div className="reaction-game-info-text">
-        <p>After you click start below a reaction test will start</p>
+        <p>Check back in 4 hours for another test</p>
         <br />
-        <p>
-          When a picture appears on the next page, click on the button as fast
-          as you can.
-        </p>
+        <p>03:59:59</p>
       </div>
 
-      <button>Start</button>
+      <Link to="/homepage">
+        <button>Homepage</button>
+      </Link>
     </div>
   );
 };
