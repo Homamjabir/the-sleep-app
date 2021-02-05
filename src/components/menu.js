@@ -37,12 +37,6 @@ const Menu = () => {
           <span>Time for a new test!</span>
         )}
       </div>
-
-
-
-
-
-
       <div className="menuButtons">
         <Route render={({ history}) => (
           <button type="button" onClick={() => { history.push('/questionnaire') }}>
