@@ -27,6 +27,12 @@ const Settings = () => {
             <div className = "menuButtons">
 
             <Route render={({ history}) => (
+              <button type="button" onClick={() => { history.push('/') }}>
+                Log Out
+              </button>
+              )} />
+
+            <Route render={({ history}) => (
               <button type="button" onClick={() => { history.push('/about') }}>
                 About the App
               </button>
