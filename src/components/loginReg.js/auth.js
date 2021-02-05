@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import {Modal,Button} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import "./auth.css"
 
 
 const Auth = () =>  {
@@ -37,7 +38,7 @@ const Auth = () =>  {
             <br />
         <div className="Formholder">
         <span id="logintext">Log in</span>
-        <form>
+        <form className="inputboxes">
             <input 
                 name="email"
                 className="logininput"
@@ -47,6 +48,7 @@ const Auth = () =>  {
                 placeholder="Email Address"
                 autoComplete="username"
             />
+            <br/>
             <br/>
             <input 
                 name="password"
