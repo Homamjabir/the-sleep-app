@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import HappySun from "./images/happy-sun.png";
 
-function useInterval(callback, delay) {
+/*function useInterval(callback, delay) {
   const savedCallback = useRef();
 
   // Remember the latest callback.
@@ -20,35 +20,23 @@ function useInterval(callback, delay) {
       return () => clearInterval(id);
     }
   }, [delay]);
-}
+}*/
 
 const ReactionGame = () => {
   const [showImage, setShowImage] = useState(false);
   //const [playedOnce, setPlayedOnce] = useState(false);
+  //const [seconds, setSeconds] = useState(0);
 
   let min = 3000; //3 sec
   let max = 10000; //10 sec
-  let rand = min + (Math.random() * max - min);
+  let rand = Math.floor(Math.random() * (max - min + 1000) + min); //min + (Math.random() * max - min);
 
-  //if (playedOnce === false)
-  useInterval(showPic, rand);
-
-  function showPic() {
-    console.log("Rand: " + rand);
-    setShowImage(true);
-    //setPlayedOnce(true);
-  }
-
-  /*function redirect() {
-    if (showImage) {
-      //redirect to next page
-      console.log("redirectar");
-      //this.props.history.push("/test");
-      //return <Redirect to="/test" />;
-    } else {
-      //setShowImage(false);
-    }
-  }*/
+  useEffect(() => {
+    setTimeout(() => {
+      console.log("Rand: " + rand);
+      setShowImage(true);
+    }, rand);
+  }, []);
 
   let buttonxd = <button>Click</button>;
   if (showImage) {
