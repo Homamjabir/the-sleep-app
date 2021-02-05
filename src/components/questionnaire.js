@@ -24,11 +24,11 @@ const Questionnaire = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p1>
           <div>
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 1" /> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 1"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 1"/> Integer eros tortor
           </div>
         </div>
         <br />
@@ -39,11 +39,11 @@ const Questionnaire = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p1>
           <div>
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 2" /> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 2"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 2"/> Integer eros tortor
           </div>
         </div>
         <br />
@@ -54,11 +54,11 @@ const Questionnaire = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p1>
           <div>
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 3"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 3"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 3"/> Integer eros tortor
           </div>
         </div>
         <br />
@@ -69,11 +69,11 @@ const Questionnaire = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p1>
           <div>
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 4"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 4"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 4"/> Integer eros tortor
           </div>
         </div>
         <br />
@@ -84,11 +84,11 @@ const Questionnaire = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p1>
           <div>
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 5"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 5"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 5"/> Integer eros tortor
           </div>
         </div>
         <br />
@@ -99,11 +99,11 @@ const Questionnaire = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p1>
           <div>
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 6"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 6"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 6"/> Integer eros tortor
           </div>
         </div>
         <br />
@@ -114,11 +114,11 @@ const Questionnaire = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p1>
           <div>
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 7"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 7"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 7"/> Integer eros tortor
           </div>
         </div>
         <br />
@@ -129,11 +129,11 @@ const Questionnaire = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p1>
           <div>
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 8"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 8"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 8"/> Integer eros tortor
           </div>
         </div>
         <br />
@@ -144,11 +144,11 @@ const Questionnaire = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p1>
           <div>
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 9"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 9"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 9"/> Integer eros tortor
           </div>
         </div>
         <br />
@@ -159,11 +159,11 @@ const Questionnaire = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p1>
           <div>
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 10"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 10"/> Integer eros tortor
             <br />
-            <input type="radio" /> Integer eros tortor
+            <input type="radio" name="answer 10"/> Integer eros tortor
           </div>
         </div>
       </div>
