@@ -61,7 +61,7 @@ const Auth = () =>  {
             <br />
             <br />
             <Link to="/menu">
-            <Button id="buttonAn">Log in Anonymously</Button>
+            <Button id="buttonAn">Login Anonymously</Button>
             </Link>
             <br/>
             <br/>
