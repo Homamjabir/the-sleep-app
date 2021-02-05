@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./css/questionnaire.css";
 import ReturnIcon from "../images/return-icon.jpg";
 
+
 const Questionnaire = () => {
   return (
     <div className="questionnaireContainer">
@@ -10,10 +11,10 @@ const Questionnaire = () => {
         <img src={ReturnIcon} alt="test" width="20" height="20"></img>
       </Link>
       <h1>Questionnaire</h1>
-      <h2>
+      <p>
         Hello there, human
         <br />I got some questions for you
-      </h2>
+      </p>
 
       <div className="questions">
         <div className="question 1">
@@ -167,7 +168,7 @@ const Questionnaire = () => {
         </div>
       </div>
       <div>
-        <button className="buttonTest">Done</button>
+        <button className="buttonTest" onClick={()=> console.log("click")}>Done</button>
       </div>
     </div>
   );

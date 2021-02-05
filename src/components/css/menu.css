@@ -1,27 +1,24 @@
-
+.menuContainer h3 {
+  padding-top: 100px;
+}
 
 .menuButtons button {
     top: 50px;
     margin: auto;
-    margin-bottom:50px;
+    margin-top: 70px;
 
     padding: 10px;
-    background-color: #1A338C; /* Green background */
-    border: 1px solid white; /* Green border */
-    color: white; /* White text */
+    background-color: #1A338C;
+    border: 1px solid white; 
+    color: white; 
     border-radius: 50px;
-    cursor: pointer; /* Pointer/hand icon */
-    width: 150px; /* Set a width if needed */
-    display: block; /* Make the buttons appear below each other */
+    cursor: pointer; 
+    width: 150px; 
+    display: block; 
     
   }
   
-  .menuButtons button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
-    
-  }
-  
-  /* Add a background color on hover */
+ 
   .menuButtons button:hover {
     background-color: #11215a ;
   }
