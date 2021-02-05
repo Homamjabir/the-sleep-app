@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
-
 import { Link } from "react-router-dom";
-import { Route } from "react-router-dom";
-import "./css/menu.css";
 
-const Menu = () => {
+const ReactionGameResults = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
@@ -26,41 +23,34 @@ const Menu = () => {
         {index !== 2 ? ":" : ""}
       </span>
     );
-     } );
+  });
 
   return (
-    <div className="menuContainer">
-      <h3>Main Menu</h3>
-      <div>
-        {timerComponents.length ? (
-          timerComponents
-        ) : (
-          <span>Time for a new test!</span>
-        )}
+    <div className="reaction-game-result-wrapper">
+      <h3>Your speed was {localStorage.getItem("reactionTime")} seconds</h3>
+      <div className="reaction-game-info-text">
+        <p>Check back in 4 hours for another test</p>
+        <br />
+        <div>
+          {timerComponents.length ? (
+            timerComponents
+          ) : (
+            <span>Time for a new test!</span>
+          )}
+        </div>
       </div>
-      <div className="menuButtons">
-        <Link to='/questionnaire'>
-            <button type="button" >Questionnaire</button>
-          </Link>
 
-          <Link to='/mini-games'>
-            <button type="button" >Mini-games</button>
-          </Link>
-
-          <Link to='/statistics'>
-            <button type="button" >Statistics</button>
-          </Link>
-
-          <Link to='/settings'>
-            <button type="button" >Settings</button>
-          </Link>
-      </div>
+      <Link to="/menu">
+        <button>Menu</button>
+      </Link>
     </div>
   );
 };
 
 const calculateTimeLeft = () => {
-  let time = new Date(JSON.parse(localStorage.getItem("startTime")));
+  let time = new Date();
+  time.setHours(time.getHours() + 3, 59, 59);
+  localStorage.setItem("startTime", JSON.stringify(time));
   let difference = time - new Date();
 
   let timeLeft = {};
@@ -75,5 +65,4 @@ const calculateTimeLeft = () => {
   return timeLeft;
 };
 
-export default Menu;
-
+export default ReactionGameResults;
