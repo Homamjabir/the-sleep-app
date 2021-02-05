@@ -1,7 +1,7 @@
 .minigames-flex-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
 }
 
 .returnIcon {
@@ -23,7 +23,7 @@
 .reaction-game-result-text {
   display: flex;
   flex-direction: column;
-  height: 55%;
+  height: 65%;
 }
 
 .reaction-game-cooldown-timer {

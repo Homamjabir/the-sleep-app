@@ -1,9 +1,9 @@
 .App {
   text-align: center;
   color: white;
-  margin:0 auto;
+  margin: 0 auto;
 
-  width: 375px;
+  /*width: 375px; no dont do this*/
   min-height: 100vh;
   background: linear-gradient(
     180deg,
