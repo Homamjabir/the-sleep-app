@@ -1,31 +1,35 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import {Modal,Button} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
-class Auth extends Component {
+const Auth = () =>  {
+    const[email, setEmail] = useState('');
+    const[password, setPassword] = useState('');
+    
 
-    constructor(props){
-        super(props);
-        this.state = {
-            email:'',
-            password:'',
-            isShowing: false,
-            showMessage: false,
-            showForgot: false,
-        };
+   const onChange = (event) =>  {
+       if(event.target.name == 'email'){
+        setEmail(event.target.value);
+       }
+       else
+        setPassword(event.target.value);
     }
 
-    onChange = event => {
-        this.setState({[event.target.name]: event.target.value});
-    }
-
-    render() {
-        const {email,password} = this.state;
+    
       return (
         <div id="flexgrid">
-            
+            <h1>Welcome to the sleeping study</h1>
+
+            <br/>
+            <br/>
+            <br/>
+            <p>
+                Your participation will help
+                understand human sleep behavior.
+            </p>
+            <br />
         <div className="Formholder">
         <span id="logintext">Log in</span>
         <form>
@@ -33,7 +37,7 @@ class Auth extends Component {
                 name="email"
                 className="logininput"
                 value={email}
-                onChange={this.onChange}
+                onChange={onChange}
                 type="text"
                 placeholder="Email Address"
                 autoComplete="username"
@@ -43,14 +47,15 @@ class Auth extends Component {
                 name="password"
                 className="logininput"
                 value={password}
-                onChange={this.onChange}
+                onChange={onChange}
                 type="password"
                 placeholder="Password"
                 autoComplete="current-password"
             />
-            <br/>
-            <Button onClick={this.Signin}>
-                Sing in
+            <br />
+            <br />
+            <Button >
+                Sign in
             </Button>
             <br/>
             <br/>
@@ -58,9 +63,12 @@ class Auth extends Component {
 
         </div>
 
+        <div id="messageModal">
+            
+        </div>
+
         </div>
       );
-    }
   }
  
 export default Auth;
