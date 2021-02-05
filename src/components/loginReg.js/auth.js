@@ -38,7 +38,7 @@ const Auth = () =>  {
             </p>
             <br />
         <div className="Formholder">
-        <span id="logintext">Log in</span>
+        <span id="logintext">Login</span>
         <form className="inputboxes">
             <input 
                 name="email"
