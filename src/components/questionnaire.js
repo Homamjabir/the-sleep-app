@@ -163,12 +163,14 @@ const Questionnaire = () => {
             <br />
             <input type="radio" name="answer 10"/> Integer eros tortor
             <br />
-            <input type="radio" name="answer 10"/> Integer eros tortor
+            <input type="radio" name="answer 1"/> Integer eros tortor
           </div>
         </div>
       </div>
       <div>
-        <button className="buttonTest" onClick={()=> console.log("click")}>Done</button>
+        <Link to='/menu'>
+          <button className="buttonTest" onClick={()=> console.log("click")}>Done</button>
+        </Link>
       </div>
     </div>
   );
