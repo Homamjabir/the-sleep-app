@@ -18,7 +18,7 @@ const App = () => {
         <Router>
           <Switch>
             <Route exact path="/">
-              <h1>Login page</h1>
+              <h1>Login pag</h1>
             </Route>
             <Route path="/reactiongameinfo">
               <ReactionGameInfo />
