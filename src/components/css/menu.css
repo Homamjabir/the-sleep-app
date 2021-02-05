@@ -11,7 +11,7 @@
     color: white; /* White text */
     border-radius: 50px;
     cursor: pointer; /* Pointer/hand icon */
-    width: 25%; /* Set a width if needed */
+    width: 150px; /* Set a width if needed */
     display: block; /* Make the buttons appear below each other */
     
   }
