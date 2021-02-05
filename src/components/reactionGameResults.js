@@ -18,7 +18,7 @@ const ReactionGameResults = () => {
     }
 
     timerComponents.push(
-      <span>
+      <span key={index}>
         {("0" + timeLeft[interval]).slice(-2)}
         {index !== 2 ? ":" : ""}
       </span>
