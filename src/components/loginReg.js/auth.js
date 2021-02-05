@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link} from "react-router-dom";
 import {Modal,Button} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -8,6 +9,7 @@ const Auth = () =>  {
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
     const[showMessage,setShowMessage] = useState(false);
+    const[message,setMessage] = useState('');
 
    const onChange = (event) =>  {
        if(event.target.name == 'email'){
