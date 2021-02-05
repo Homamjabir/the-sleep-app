@@ -1,5 +1,10 @@
 .returnIcon {
-  align-self: flex-start;
+  float: left;
   margin-left: 20px;
   margin-top: 20px;
+}
+
+.statisticsContainer h3 {
+  padding-top: 100px;
+  
 }
