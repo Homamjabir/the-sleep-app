@@ -1,0 +1,57 @@
+[debug] [2021-02-05T10:53:21.160Z] ----------------------------------------------------------------------
+[debug] [2021-02-05T10:53:21.163Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Georgek Aroush\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting:github
+[debug] [2021-02-05T10:53:21.164Z] CLI Version:   9.3.0
+[debug] [2021-02-05T10:53:21.164Z] Platform:      win32
+[debug] [2021-02-05T10:53:21.164Z] Node Version:  v12.13.0
+[debug] [2021-02-05T10:53:21.166Z] Time:          Fri Feb 05 2021 11:53:21 GMT+0100 (Central European Standard Time)
+[debug] [2021-02-05T10:53:21.166Z] ----------------------------------------------------------------------
+[debug] [2021-02-05T10:53:21.166Z] 
+[debug] [2021-02-05T10:53:21.175Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-05T10:53:21.176Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Georgek Aroush\Documents\GitHub\the-sleep-app
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-02-05T10:53:30.929Z] ----------------------------------------------------------------------
+[debug] [2021-02-05T10:53:30.933Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Georgek Aroush\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting:github
+[debug] [2021-02-05T10:53:30.933Z] CLI Version:   9.3.0
+[debug] [2021-02-05T10:53:30.933Z] Platform:      win32
+[debug] [2021-02-05T10:53:30.933Z] Node Version:  v12.13.0
+[debug] [2021-02-05T10:53:30.935Z] Time:          Fri Feb 05 2021 11:53:30 GMT+0100 (Central European Standard Time)
+[debug] [2021-02-05T10:53:30.935Z] ----------------------------------------------------------------------
+[debug] [2021-02-05T10:53:30.936Z] 
+[debug] [2021-02-05T10:53:30.946Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-05T10:53:30.947Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Georgek Aroush\Documents\GitHub\the-sleep-app
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
