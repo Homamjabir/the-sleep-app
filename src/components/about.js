@@ -12,7 +12,7 @@ const About = () => {
             <img src={ReturnIcon} alt="test" width="20" height="20"></img>
           </Link>
 
-          
+
           <h2>About</h2>
 
           <p>This app is a tool to help aid Karolinska Institutet
@@ -21,7 +21,7 @@ const About = () => {
               <br></br>
               Your participation will contribute to<br></br>
               researchers gaining more knowledge about<br></br>
-              sleep patterns, and in turn becoming more able<br></br>
+              sleep patterns, and in turn becoming more able
               to help people live more productive and fulfilling lives.
           </p>
 

@@ -24,7 +24,14 @@ const Settings = () => {
             <Switch value={value} onChange={setValue} />
             </div>
 
-            <div className = "menuButtons">
+            <div className = "menuButtons1">
+
+
+            <Route render={({ history}) => (
+              <button type="button" onClick={() => { history.push('/about') }}>
+                About the Study
+              </button>
+            )} />
 
             <Route render={({ history}) => (
               <button type="button" onClick={() => { history.push('/') }}>
@@ -32,11 +39,7 @@ const Settings = () => {
               </button>
               )} />
 
-            <Route render={({ history}) => (
-              <button type="button" onClick={() => { history.push('/about') }}>
-                About the App
-              </button>
-            )} />
+
               </div>
         </div>
       );

@@ -9,14 +9,14 @@
 }
 
 .SettingsContainer h2 {
-  padding-top: 100px;
+  padding-top: 150px;
   margin-bottom: 50px;
 
 }
 
 .SettingsContainer p{
   margin-left: 50px;
-  margin-top: 0px;
+  margin-top: 100px;
   float: left;
 
 }
@@ -24,6 +24,7 @@
 .switch {
   float: left;
   margin-left: 50px;
+  margin-top: 100px;
   margin-bottom: 200px;
 }
 .AboutContainer h2 {
@@ -31,6 +32,12 @@
   padding-top: 200px;
 
 
+}
+
+.AboutContainer p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 18px;
 }
 
 .menuButtons1 button {
@@ -44,7 +51,7 @@
     color: white; /* White text */
     border-radius: 50px;
     cursor: pointer; /* Pointer/hand icon */
-    width: 25%; /* Set a width if needed */
+    width: 150px; /* Set a width if needed */
     display: block; /* Make the buttons appear below each other */
 
   }
