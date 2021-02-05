@@ -10,6 +10,9 @@ import Questionnaire from "./components/questionnaire.js";
 import Settings from "./components/settings.js";
 import Statistics from "./components/statistics.js";
 import Mini_games from "./components/mini-games.js";
+import Auth from "./components/loginReg.js/auth.js";
+import About from "./components/about.js";
+
 
 const App = () => {
   return (
@@ -18,7 +21,7 @@ const App = () => {
         <Router>
           <Switch>
             <Route exact path="/">
-              <h1>Login page</h1>
+              <Auth />
             </Route>
             <Route path="/reactiongameinfo">
               <ReactionGameInfo />
@@ -35,9 +38,6 @@ const App = () => {
             <Route path="/questionnaire">
               <Questionnaire />
             </Route>
-            <Route path="*">
-              <h1>Invalid URL</h1>
-            </Route>
             <Route path="/settings">
               <Settings />
             </Route>
@@ -46,6 +46,12 @@ const App = () => {
             </Route>
             <Route path="/mini-games">
               <Mini_games />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="*">
+              <h1>Invalid URL</h1>
             </Route>
           </Switch>
         </Router>
