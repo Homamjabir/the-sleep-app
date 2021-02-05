@@ -1,18 +1,15 @@
-
 .questionnaireContainer {
     position: relative;
-    
-  
-  
+
 }
+
 .returnIcon {
-      
+
     float: left;
-   
+
     margin-left: 20px;
     margin-top: 20px;
   }
-
 
 .questionnaireContainer h1 {
     padding-top: 100px;
@@ -47,4 +44,3 @@
 .questionnaireContainer button:hover {
     background-color: #11215a ;
   }
-
