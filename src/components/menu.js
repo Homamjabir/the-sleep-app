@@ -10,7 +10,10 @@ const Menu = () => {
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
-  });
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
 
   const timerComponents = [];
 
@@ -25,7 +28,7 @@ const Menu = () => {
         {index !== 2 ? ":" : ""}
       </span>
     );
-     } );
+  });
 
   return (
     <div className="menuContainer">
@@ -38,21 +41,21 @@ const Menu = () => {
         )}
       </div>
       <div className="menuButtons">
-          <Link to='/questionnaire'>
-            <button type="button" >Questionnaire</button>
-          </Link>
+        <Link to="/questionnaire">
+          <button type="button">Questionnaire</button>
+        </Link>
 
-          <Link to='/mini-games'>
-            <button type="button" >Mini-games</button>
-          </Link>
+        <Link to="/mini-games">
+          <button type="button">Mini-games</button>
+        </Link>
 
-          <Link to='/statistics'>
-            <button type="button" >Statistics</button>
-          </Link>
+        <Link to="/statistics">
+          <button type="button">Statistics</button>
+        </Link>
 
-          <Link to='/settings'>
-            <button type="button" >Settings</button>
-          </Link>
+        <Link to="/settings">
+          <button type="button">Settings</button>
+        </Link>
       </div>
     </div>
   );
@@ -75,4 +78,3 @@ const calculateTimeLeft = () => {
 };
 
 export default Menu;
-

@@ -17,7 +17,7 @@ const ReactionGame = () => {
       let dx = new Date();
       let startTime = dx.getTime();
       setStartTime(startTime);
-    }, 1000);
+    }, rand);
   }, []);
 
   function stopTimer() {

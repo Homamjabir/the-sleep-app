@@ -9,7 +9,10 @@ const ReactionGameResults = () => {
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
-  });
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
 
   const timerComponents = [];
 
