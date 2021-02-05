@@ -27,7 +27,7 @@
 
 }
 
-.menuButtons button {
+.menuButtons1 button {
     top: 50px;
     margin: auto;
     margin-bottom:50px;
@@ -43,12 +43,12 @@
 
   }
 
-  .menuButtons button:not(:last-child) {
+  .menuButtons1 button:not(:last-child) {
     border-bottom: none; /* Prevent double borders */
 
   }
 
   /* Add a background color on hover */
-  .menuButtons button:hover {
+  .menuButtons1 button:hover {
     background-color: #11215a ;
   }

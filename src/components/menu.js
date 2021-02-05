@@ -39,7 +39,7 @@ const Menu = () => {
         )}
       </div>
       <div className="menuButtons">
-        <Link to='/questionnaire'>
+          <Link to='/questionnaire'>
             <button type="button" >Questionnaire</button>
           </Link>
 
