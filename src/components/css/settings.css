@@ -1,4 +1,32 @@
 
+
+
+
+.SettingsContainer h2 {
+  margin-top: 200px;
+  margin-bottom: 50px;
+
+}
+
+.SettingsContainer p{
+  margin-left: 50px;
+  margin-top: 0px;
+  float: left;
+
+}
+
+.switch {
+  float: left;
+  margin-left: 50px;
+  margin-bottom: 200px;
+}
+.AboutContainer {
+
+  margin-top: 200px;
+
+
+}
+
 .menuButtons button {
     top: 50px;
     margin: auto;

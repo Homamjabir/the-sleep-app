@@ -1,14 +1,25 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import {Route} from "react-router-dom";
-import "./css/menu.css"
+import "./css/settings.css"
+import Switch from 'react-input-switch';
 
-class Settings extends Component {
-    render() {
+
+
+const Settings = () => {
+    const [value, setValue] = useState(0);
       return (
         <div className = "SettingsContainer">
-            <h1>Settings</h1>
+            <h2>Settings</h2>
 
-            
+            <div className = "notif" >
+
+            <p>Notifications during work hours</p>
+
+            </div>
+            <div className = "switch" >
+            <Switch value={value} onChange={setValue} />
+            </div>
+
             <div className = "menuButtons">
 
             <Route render={({ history}) => (
@@ -19,7 +30,7 @@ class Settings extends Component {
               </div>
         </div>
       );
-    }
+
   }
 
 export default Settings;
