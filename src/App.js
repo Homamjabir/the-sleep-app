@@ -15,42 +15,40 @@ import About from "./components/about.js";
 const App = () => {
   return (
     <div className="App">
-      <div>
-        <Router>
-          <Switch>
-            <Route exact path="/">
-              <Auth />
-            </Route>
-            <Route path="/reactiongame">
-              <ReactionGame />
-            </Route>
-            <Route path="/results">
-              <ReactionGameResults />
-            </Route>
-            <Route path="/menu">
-              <Menu />
-            </Route>
-            <Route path="/questionnaire">
-              <Questionnaire />
-            </Route>
-            <Route path="/settings">
-              <Settings />
-            </Route>
-            <Route path="/statistics">
-              <Statistics />
-            </Route>
-            <Route path="/mini-games">
-              <Mini_games />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="*">
-              <h1>Invalid URL</h1>
-            </Route>
-          </Switch>
-        </Router>
-      </div>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Auth />
+          </Route>
+          <Route path="/reactiongame">
+            <ReactionGame />
+          </Route>
+          <Route path="/results">
+            <ReactionGameResults />
+          </Route>
+          <Route path="/menu">
+            <Menu />
+          </Route>
+          <Route path="/questionnaire">
+            <Questionnaire />
+          </Route>
+          <Route path="/settings">
+            <Settings />
+          </Route>
+          <Route path="/statistics">
+            <Statistics />
+          </Route>
+          <Route path="/mini-games">
+            <Mini_games />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="*">
+            <h1>Invalid URL</h1>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 };

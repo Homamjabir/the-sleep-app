@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import HappySun from "../images/happy-sun.png";
+import "./css/minigames.css";
 
 const ReactionGame = () => {
   const [showImage, setShowImage] = useState(false);
@@ -16,7 +17,7 @@ const ReactionGame = () => {
       let dx = new Date();
       let startTime = dx.getTime();
       setStartTime(startTime);
-    }, rand);
+    }, 1000);
   }, []);
 
   function stopTimer() {
@@ -27,18 +28,20 @@ const ReactionGame = () => {
     localStorage.setItem("reactionTime", reactionTime);
   }
 
-  let button = <button>Click</button>;
+  let button = <button className="minigame-button-bigger">Click</button>;
   if (showImage) {
     button = (
       <Link to="/results">
-        <button onClick={stopTimer}>Click</button>
+        <button className="minigame-button-bigger" onClick={stopTimer}>
+          Click
+        </button>
       </Link>
     );
   }
 
   return (
-    <div className="reaction-game-wrapper">
-      <h3>Reaction game</h3>
+    <div className="minigames-flex-wrapper">
+      <h3 className="minigames-title">Reaction game</h3>
       <div className="reaction-game-image">
         {showImage ? (
           <img
@@ -50,8 +53,11 @@ const ReactionGame = () => {
           ></img>
         ) : null}
       </div>
-      <p>Wait for the picture</p>
-      {button}
+
+      <div className="button-wrapper-link">
+        <p>Wait for the picture</p>
+        {button}
+      </div>
     </div>
   );
 };

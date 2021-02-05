@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ReturnIcon from "../images/return-icon.jpg";
+import "./css/minigames.css";
 
 const Mini_games = () => {
   return (
-    <div className="mini_gamesContainer">
-      <Link to="/menu">
+    <div className="minigames-flex-wrapper">
+      <Link to="/menu" className="returnIcon">
         <img src={ReturnIcon} alt="test" width="20" height="20"></img>
       </Link>
       <h3>Reaction game</h3>
@@ -18,8 +19,8 @@ const Mini_games = () => {
         </p>
       </div>
 
-      <Link to="/reactiongame">
-        <button>Start</button>
+      <Link to="/reactiongame" className="button-wrapper-link">
+        <button className="minigame-button">Start</button>
       </Link>
     </div>
   );

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./css/minigames.css";
 
 const ReactionGameResults = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -26,12 +27,16 @@ const ReactionGameResults = () => {
   });
 
   return (
-    <div className="reaction-game-result-wrapper">
-      <h3>Your speed was {localStorage.getItem("reactionTime")} seconds</h3>
-      <div className="reaction-game-info-text">
-        <p>Check back in 4 hours for another test</p>
+    <div className="minigames-flex-wrapper">
+      <h3 className="minigames-result-title">
+        Your speed was {localStorage.getItem("reactionTime")} seconds
+      </h3>
+      <div className="reaction-game-result-text">
+        <p className="reaction-game-info-text">
+          Check back in 4 hours for another test
+        </p>
         <br />
-        <div>
+        <div className="reaction-game-cooldown-timer">
           {timerComponents.length ? (
             timerComponents
           ) : (
@@ -41,7 +46,7 @@ const ReactionGameResults = () => {
       </div>
 
       <Link to="/menu">
-        <button>Menu</button>
+        <button className="minigame-button">Menu</button>
       </Link>
     </div>
   );
