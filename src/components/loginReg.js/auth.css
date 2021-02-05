@@ -3,12 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 10vh;
 }
 
 .Formholder{
-    width: 500px;
-    border-radius: 10px;
-    overflow: hidden;
+
     padding: 55px 55px 37px;
 }
 
@@ -41,3 +40,6 @@
 }
 
 
+#buttonAn{
+ border-radius: 15px;
+}
