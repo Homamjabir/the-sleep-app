@@ -8,7 +8,7 @@ const About = () => {
 
       return (
         <div className = "AboutContainer">
-          <Link to="/settings">
+          <Link to="/settings" className="returnIcon">
             <img src={ReturnIcon} alt="test" width="20" height="20"></img>
           </Link>
 
