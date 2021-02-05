@@ -30,7 +30,6 @@ const Auth = () =>  {
 
             <br/>
             <br/>
-
             <p id="Hellssa">
                 Your participation will help
                 understand human sleep behavior.
