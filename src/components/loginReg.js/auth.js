@@ -30,7 +30,6 @@ const Auth = () =>  {
 
             <br/>
             <br/>
-
             <p id="Hellssa">
                 Your participation will help
                 understand human sleep behavior.
@@ -61,7 +60,7 @@ const Auth = () =>  {
             <br />
             <br />
             <Link to="/menu">
-            <Button id="buttonAn">Log in Anonymously</Button>
+            <Button id="buttonAn">Login Anonymously</Button>
             </Link>
             <br/>
             <br/>
