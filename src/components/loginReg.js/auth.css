@@ -34,11 +34,24 @@
     outline: none;
     border: none;
     box-sizing: border-box;
-    border-bottom: 2px solid RGBA(169, 169, 169, 1);
-    outline: none;
+    border-bottom: 2px solid RGBA(255,255,255, 1);
     background: transparent !important;
     text-align: center;
+    color: white;
 }
+
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+   }
+   
+   ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+   }
 
 
 #buttonAn{

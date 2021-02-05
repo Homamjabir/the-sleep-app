@@ -35,7 +35,6 @@ const Auth = () =>  {
                 understand human sleep behavior.
             </p>
         <div className="Formholder">
-        <span id="logintext">Login</span>
         <form className="inputboxes">
             <input 
                 name="email"
