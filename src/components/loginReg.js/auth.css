@@ -1,0 +1,27 @@
+#flexgrid{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.Formholder{
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 55px 55px 37px;
+    background-image: url('http://i.stack.imgur.com/kx8MT.gif');
+    background-color:#1fdb6d;
+    background-image: linear-gradient(141deg,#9fb8ad 0%, #1fdb7d 51%, #2ce864 75%);
+    text-align: center;
+    align-items: center;
+} 
+
+#logintext{
+    font-family: Poppins-Bold;
+    font-size: 24px;
+    color: black;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
