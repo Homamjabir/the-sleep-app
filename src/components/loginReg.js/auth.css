@@ -7,8 +7,11 @@
 }
 
 .Formholder{
+    padding: 45px 55px 37px;
+}
 
-    padding: 55px 55px 37px;
+p{
+    padding: 10%;
 }
 
 #logintext{

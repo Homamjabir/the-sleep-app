@@ -30,13 +30,11 @@ const Auth = () =>  {
 
             <br/>
             <br/>
-            <br/>
-            <br/>
+
             <p>
                 Your participation will help
                 understand human sleep behavior.
             </p>
-            <br />
         <div className="Formholder">
         <span id="logintext">Login</span>
         <form className="inputboxes">
