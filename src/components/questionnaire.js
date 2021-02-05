@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import "./css/questionnaire.css";
 import ReturnIcon from "../images/return-icon.jpg";
 
@@ -168,9 +168,11 @@ const Questionnaire = () => {
         </div>
       </div>
       <div>
-        <Link to='/menu'>
-          <button className="buttonTest" onClick={()=> console.log("click")}>Done</button>
-        </Link>
+      <Route render={({ history}) => (
+          <button type="button" onClick={() => { history.push('/menu') }}>
+            Menu
+          </button>
+        )} />
       </div>
     </div>
   );

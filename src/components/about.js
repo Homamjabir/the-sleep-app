@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Link} from "react-router-dom";
+import {Route, Link} from "react-router-dom";
 import "./css/settings.css"
 import ReturnIcon from "../images/return-icon.jpg";
 
@@ -11,6 +11,8 @@ const About = () => {
           <Link to="/settings">
             <img src={ReturnIcon} alt="test" width="20" height="20"></img>
           </Link>
+
+          
           <h2>About</h2>
 
           <p>This app is a tool to help aid Karolinska Institutet
@@ -24,9 +26,11 @@ const About = () => {
           </p>
 
           <div className="menuButtons1">
-            <Link to='/menu'>
-              <button type="button" >Menu</button>
-            </Link>
+            <Route render={({ history}) => (
+              <button type="button" onClick={() => { history.push('/menu') }}>
+                Menu
+              </button>
+            )} />
           </div>
     </div>
 

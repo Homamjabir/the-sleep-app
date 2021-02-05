@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { Link } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import "./css/menu.css";
 
 const Menu = () => {
@@ -40,22 +40,36 @@ const Menu = () => {
           <span>Time for a new test!</span>
         )}
       </div>
+
+
+
+
+
+
       <div className="menuButtons">
-        <Link to="/questionnaire">
-          <button type="button">Questionnaire</button>
-        </Link>
+        <Route render={({ history}) => (
+          <button type="button" onClick={() => { history.push('/questionnaire') }}>
+            Questionnaire
+          </button>
+        )} />
 
-        <Link to="/mini-games">
-          <button type="button">Mini-games</button>
-        </Link>
+        <Route render={({ history}) => (
+          <button type="button" onClick={() => { history.push('/mini-games') }}>
+            Mini-games
+          </button>
+        )} />
 
-        <Link to="/statistics">
-          <button type="button">Statistics</button>
-        </Link>
+        <Route render={({ history}) => (
+          <button type="button" onClick={() => { history.push('/statistics') }}>
+            Statistics
+          </button>
+        )} />
 
-        <Link to="/settings">
-          <button type="button">Settings</button>
-        </Link>
+        <Route render={({ history}) => (
+          <button type="button" onClick={() => { history.push('/settings') }}>
+            Settings
+          </button>
+        )} />
       </div>
     </div>
   );
