@@ -10,7 +10,7 @@ const Settings = () => {
     const [value, setValue] = useState(0);
       return (
         <div className = "SettingsContainer">
-        <Link to="/menu">
+        <Link to="/menu" className="returnIcon">
           <img src={ReturnIcon} alt="test" width="20" height="20"></img>
         </Link>
             <h2>Settings</h2>
