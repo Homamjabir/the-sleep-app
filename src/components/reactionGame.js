@@ -54,7 +54,7 @@ const ReactionGame = () => {
         ) : null}
       </div>
 
-      <div className="button-wrapper-link">
+      <div>
         <p>Wait for the picture</p>
         {button}
       </div>

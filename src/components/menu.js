@@ -10,10 +10,7 @@ const Menu = () => {
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
+  });
 
   const timerComponents = [];
 
@@ -62,19 +59,25 @@ const Menu = () => {
 };
 
 const calculateTimeLeft = () => {
-  let time = new Date(JSON.parse(localStorage.getItem("startTime")));
-  let difference = time - new Date();
+  let storage = localStorage.getItem("startTime");
+  let time = null;
+  if (storage !== null) {
+    time = new Date(JSON.parse(localStorage.getItem("startTime")));
 
-  let timeLeft = {};
-  if (difference > 0) {
-    timeLeft = {
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / 1000 / 60) % 60),
-      seconds: Math.floor((difference / 1000) % 60),
-    };
+    let difference = time - new Date();
+
+    let timeLeft = {};
+    if (difference > 0) {
+      timeLeft = {
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+
+    return timeLeft;
   }
-
-  return timeLeft;
+  return {};
 };
 
 export default Menu;

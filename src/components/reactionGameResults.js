@@ -4,15 +4,13 @@ import "./css/minigames.css";
 
 const ReactionGameResults = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  let clickedButton = false;
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
+  });
 
   const timerComponents = [];
 
@@ -48,7 +46,7 @@ const ReactionGameResults = () => {
         </div>
       </div>
 
-      <Link to="/menu">
+      <Link to="/menu" className="button-wrapper-link">
         <button className="minigame-button">Menu</button>
       </Link>
     </div>
