@@ -20,7 +20,7 @@ const Menu = () => {
 
     timerComponents.push(
       <span>
-        {timeLeft[interval]}
+        {("0" + timeLeft[interval]).slice(-2)}
         {index !== 2 ? ":" : ""}
       </span>
     );

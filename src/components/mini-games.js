@@ -5,10 +5,10 @@ import ReturnIcon from "../images/return-icon.jpg";
 const Mini_games = () => {
   return (
     <div className="mini_gamesContainer">
-      <h3>Reaction game</h3>
       <Link to="/menu">
         <img src={ReturnIcon} alt="test" width="20" height="20"></img>
       </Link>
+      <h3>Reaction game</h3>
       <div className="reaction-game-info-text">
         <p>After you click start below a reaction test will start</p>
         <br />
