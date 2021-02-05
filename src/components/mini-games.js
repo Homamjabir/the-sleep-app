@@ -19,6 +19,9 @@ const Mini_games = () => {
         </p>
       </div>
 
+      
+      
+
       <Link to="/reactiongame" className="button-wrapper-link">
         <button className="minigame-button">Start</button>
       </Link>

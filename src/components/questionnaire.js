@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import "./css/questionnaire.css";
 import ReturnIcon from "../images/return-icon.jpg";
 
@@ -18,11 +18,11 @@ const Questionnaire = () => {
 
       <div className="questions">
         <div className="question 1">
-          <p1>
+          <p>
             Question 1:
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p1>
+          </p>
           <div>
             <input type="radio" name="answer 1" /> Integer eros tortor
             <br />
@@ -33,11 +33,11 @@ const Questionnaire = () => {
         </div>
         <br />
         <div className="question 2">
-          <p1>
+          <p>
             Question 2:
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p1>
+          </p>
           <div>
             <input type="radio" name="answer 2" /> Integer eros tortor
             <br />
@@ -48,11 +48,11 @@ const Questionnaire = () => {
         </div>
         <br />
         <div>
-          <p1>
+          <p>
             Question 3:
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p1>
+          </p>
           <div>
             <input type="radio" name="answer 3"/> Integer eros tortor
             <br />
@@ -63,11 +63,11 @@ const Questionnaire = () => {
         </div>
         <br />
         <div>
-          <p1>
+          <p>
             Question 4:
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p1>
+          </p>
           <div>
             <input type="radio" name="answer 4"/> Integer eros tortor
             <br />
@@ -78,11 +78,11 @@ const Questionnaire = () => {
         </div>
         <br />
         <div>
-          <p1>
+          <p>
             Question 5:
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p1>
+          </p>
           <div>
             <input type="radio" name="answer 5"/> Integer eros tortor
             <br />
@@ -93,11 +93,11 @@ const Questionnaire = () => {
         </div>
         <br />
         <div>
-          <p1>
+          <p>
             Question 6:
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p1>
+          </p>
           <div>
             <input type="radio" name="answer 6"/> Integer eros tortor
             <br />
@@ -108,11 +108,11 @@ const Questionnaire = () => {
         </div>
         <br />
         <div>
-          <p1>
+          <p>
             Question 7:
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p1>
+          </p>
           <div>
             <input type="radio" name="answer 7"/> Integer eros tortor
             <br />
@@ -123,11 +123,11 @@ const Questionnaire = () => {
         </div>
         <br />
         <div>
-          <p1>
+          <p>
             Question 8:
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p1>
+          </p>
           <div>
             <input type="radio" name="answer 8"/> Integer eros tortor
             <br />
@@ -138,11 +138,11 @@ const Questionnaire = () => {
         </div>
         <br />
         <div>
-          <p1>
+          <p>
             Question 9:
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p1>
+          </p>
           <div>
             <input type="radio" name="answer 9"/> Integer eros tortor
             <br />
@@ -153,24 +153,26 @@ const Questionnaire = () => {
         </div>
         <br />
         <div>
-          <p1>
+          <p>
             Question 10:
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p1>
+          </p>
           <div>
             <input type="radio" name="answer 10"/> Integer eros tortor
             <br />
             <input type="radio" name="answer 10"/> Integer eros tortor
             <br />
-            <input type="radio" name="answer 1"/> Integer eros tortor
+            <input type="radio" name="answer 10"/> Integer eros tortor
           </div>
         </div>
       </div>
       <div>
-        <Link to='/menu'>
-          <button className="buttonTest" onClick={()=> console.log("click")}>Done</button>
-        </Link>
+      <Route render={({ history}) => (
+          <button type="button" onClick={() => { history.push('/menu') }}>
+            Menu
+          </button>
+        )} />
       </div>
     </div>
   );
