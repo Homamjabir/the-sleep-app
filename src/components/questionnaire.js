@@ -7,7 +7,7 @@ import ReturnIcon from "../images/return-icon.jpg";
 const Questionnaire = () => {
   return (
     <div className="questionnaireContainer">
-      <Link to="/menu">
+      <Link to="/menu" className="returnIcon">
         <img src={ReturnIcon} alt="test" width="20" height="20"></img>
       </Link>
       <h1>Questionnaire</h1>
