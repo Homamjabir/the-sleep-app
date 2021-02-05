@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Route } from "react-router-dom";
+
+import { Link } from "react-router-dom";
 import "./css/menu.css";
 
 const Menu = () => {
@@ -24,7 +25,7 @@ const Menu = () => {
         {index !== 2 ? ":" : ""}
       </span>
     );
-  });
+     } );
 
   return (
     <div className="menuContainer">
@@ -37,54 +38,21 @@ const Menu = () => {
         )}
       </div>
       <div className="menuButtons">
-        <Route
-          render={({ history }) => (
-            <button
-              type="button"
-              onClick={() => {
-                history.push("/questionnaire");
-              }}
-            >
-              Questionnaire
-            </button>
-          )}
-        />
-        <Route
-          render={({ history }) => (
-            <button
-              type="button"
-              onClick={() => {
-                history.push("/mini-games");
-              }}
-            >
-              Mini-games
-            </button>
-          )}
-        />
-        <Route
-          render={({ history }) => (
-            <button
-              type="button"
-              onClick={() => {
-                history.push("/statistics");
-              }}
-            >
-              Statistics
-            </button>
-          )}
-        />
-        <Route
-          render={({ history }) => (
-            <button
-              type="button"
-              onClick={() => {
-                history.push("/settings");
-              }}
-            >
-              Settings
-            </button>
-          )}
-        />
+          <Link to='/questionnaire'>
+            <button type="button" >Questionnaire</button>
+          </Link>
+
+          <Link to='/mini-games'>
+            <button type="button" >Mini-games</button>
+          </Link>
+
+          <Link to='/statistics'>
+            <button type="button" >Statistics</button>
+          </Link>
+
+          <Link to='/settings'>
+            <button type="button" >Settings</button>
+          </Link>
       </div>
     </div>
   );
@@ -107,3 +75,4 @@ const calculateTimeLeft = () => {
 };
 
 export default Menu;
+
