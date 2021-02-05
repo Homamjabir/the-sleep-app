@@ -61,13 +61,14 @@
   border-width: thin;
   box-shadow: 0px 4px 12px -1px black;
   color: white;
+  left: 100px;
 }
 
 .button-wrapper-link {
   position: absolute;
   bottom: 100px;
   margin: auto;
-  width: 100%;
+  left: 120px;
 }
 
 .reaction-game-image {
